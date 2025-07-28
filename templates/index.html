@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FLAC Converter</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/static/logo.png" alt="Logo" class="logo" />
+      <h1>FLAC File Converter</h1>
+      <p>Convert MP3 / MP4 to FLAC quickly and easily</p>
+    </header>
+
+    <form id="uploadForm">
+      <label for="fileInput" class="upload-box" id="fileLabel">📂 Chọn file MP3 hoặc MP4</label>
+      <input type="file" id="fileInput" name="file" accept=".mp3,.mp4" required hidden />
+      <button type="submit" class="btn-submit">Convert</button>
+    </form>
+
+    <div class="progress hidden">
+      <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+
+    <div id="result" class="hidden">
+      <p>✅ Chuyển đổi thành công!</p>
+      <a id="downloadLink" class="btn-download" href="#" download>⬇️ Tải FLAC</a>
+    </div>
+  </div>
+</body>
+</html>
